@@ -1,52 +1,69 @@
-let person1 = {
-    firstName: 'Glorija',
-    lastName: 'Ilieva'
-    };
-    let person2 = {
-    firstName: 'Melani',
-    lastName: 'Ristova'
-    };
-    let person3 = {
-    firstName: 'Katerina',
-    lastName: 'Krilenkova'
-    };
-    console.log(person1.firstName);
-    console.log(person1.lastName);
-    console.log(person1['firstName']);
-    console.log(person1['lastName']);
-    
-    console.log(person2.firstName);
-    console.log(person2.lastName);
-    console.log(person2['firstName']);
-    console.log(person2['lastName']);
-    
-    console.log(person3.firstName);
-    console.log(person3.lastName);
-    console.log(person3['firstName']);
-    console.log(person3['lastName']);
-    
-    
-    
-    person1.age = 20;
-    
-    console.log(person1);
-    person2.age = 21;
-    
-    console.log(person2);
-    person3.age = 19;
-    
-    console.log(person3);
-    
-    
-    
-    if (person1.age > person2.age && person1.age > person3.age) {
-    console.log('old', person1.age);
-    } else if (person2.age > person1.age && person2.age > person3.age) {
-    console.log('old', person2.age);
-    } else if (person3.age > person1.age && person3.age > person2.age) {
-    console.log('old', person3.age);
-    }
-    
-    
-    
-    
+let fruits = ['Orange', 'Apple', 'Banana'];
+    let students = [
+        {
+            firstName: 'Glorija',
+            lastName: 'iIlieva',
+            age : 20
+        },
+        {
+            firstName: 'Marija',
+            lastName: 'Ristova',
+            age : 25
+        },
+        {
+            firstName: 'David',
+            lastName: 'Ristov',
+            age : 27
+        },
+        {
+            firstName: 'Kire',
+            lastName: 'Gorgiev',
+           age : 30
+        },
+        {
+            firstName: 'Tamara',
+            lastName: 'Temova',
+         age : 24
+        }
+    ];
+
+for(let counter = 0; counter < fruits.length; counter++ ) {
+    console.log("counter =", counter);
+    console.log(`fruits[${counter}] = ` , fruits[counter]);
+}
+
+
+
+for(let counter = 0; counter < students.length; counter++ ) {
+    console.log('counter =', counter);
+    console.log(`students[${counter}] =`, students[counter]);
+}
+
+
+
+let broevi = [ 1, 4,  6,  7, 10, 13,18, 20, 24, 29, 31, 35, 38, 40, 41 ];
+
+for(let counter =0; counter <= 10; counter++ ) {
+    console.log('counter=', counter);
+    console.log(`broevi[${counter}] =`, broevi[counter]);
+}
+
+
+
+
+let vezba = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+
+for(let counter=0; counter <= 10; counter++ ){
+    console.log('counter=', counter); 
+    console.log(`vezba[${counter}] =`, vezba[counter]);
+}
+
+
+
+
+let vezba3 = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+
+for(let counter=0; counter <= 10; counter++ ){
+    console.log('counter=', counter);
+    console.log(`vezba3[${counter}] =`, vezba3[counter]);
+}
